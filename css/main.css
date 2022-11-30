@@ -1,0 +1,567 @@
+/* hide form label */
+.form-input label {
+  position: absolute;
+  left: -99999px;
+}
+
+/* class used by JS to hide form elements */
+.hide {
+  display: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+font-family: 'Inter', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ccc;
+}
+
+.logo {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 1;
+  justify-self: start;
+  text-decoration: none;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #212121;
+}
+
+@media screen and (min-width: 40em){
+  .logo {
+    justify-self: center;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: #212121;
+}
+
+@media screen and (min-width: 40em){
+  nav {
+    /* reset overlay styles */
+    position: static;
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    /* position on main grid */
+    grid-row: 1;
+    grid-column: 1;
+    /* spread links */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 40em){
+  nav a {
+    color: #212121;
+    font-size: 1rem;
+  }
+}
+
+/* "home" link */
+nav a:nth-child(3){
+  visibility: visible;
+}
+
+@media screen and (min-width: 40em){
+  nav a:nth-child(3){
+    visibility: hidden;
+  }
+}
+
+.toggle-menu {
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: end;
+}
+
+/* toggle/button is not needed on wide screens */
+@media screen and (min-width: 40em){
+  .toggle-menu {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* hide class is not needed on wide screens */
+@media screen and (min-width: 40em){
+  .hide {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro div {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr;
+  place-items: center;
+  height: 100vh;
+}
+
+.intro div:nth-child(odd){
+  background-color: #e5e5e5;
+}
+
+.intro p {
+
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+.intro h1 {
+
+  font-size: 7.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -2px;
+}
+.intro h2{
+
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+  .intro h3 {
+ 
+  font-size: 15rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.previewscenes {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100vh;
+}
+
+.previewscenes h1{
+font-size: 7.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hook{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+
+  
+}
+
+.hook h1{
+  grid-row:1;
+  grid-column:1;
+
+}
+
+.hook h2{
+    grid-row:1;
+  grid-column:2;
+
+}
+
+.hook img{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Uses {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100vh;
+}
+
+.Uses ul{
+  
+}
+.Uses p{
+  
+}
+
+
+.Uses img{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100vh;
+
+}
+
+.color img{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.silent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100vh;
+
+
+}
+
+.silent img{
+
+
+}
+.silent h1{
+
+
+} 
+
+.silent p{
+
+
+}
+
+
+.camoflage{
+display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100vh;
+}
+
+.camoflage h1{
+  
+}
+
+.camoflage p{
+  
+}
+
+
+
+
+
+.utility{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  grid-gap: 2rem;
+  text-align: center;
+}
+
+
+.utility img {
+  width:100%;
+}
+
+
+
+.durability{
+ 
+  grid-column: 2;
+  grid-row: 1;
+  
+  
+}
+
+
+.durability img{
+
+
+}
+
+.durability h1{
+
+}
+.durability p{
+
+}
+
+
+
+
+
+
+
+
+.affordability{
+  grid-column: 1;
+  grid-row: 1;
+ 
+}
+
+
+
+.affordability img{
+ 
+
+}
+
+.affordability h1{
+
+}
+
+.affordability p{
+
+}
+
+
+
+
+
+
+
+.button{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
